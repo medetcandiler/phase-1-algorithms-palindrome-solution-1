@@ -1,13 +1,19 @@
+
+
 function isPalindrome(word) {
   // Write your algorithm here
-  let backWord = word.split('').reverse().join('');
-  if( word === backWord){
+  let backedWord = backWord(word);
+  if( word === backedWord){
     console.log(true)
     return true;
   } else {
     console.log(false)
     return false;
   }
+}
+
+function backWord(word){
+  return word.split('').reverse().join('');
 }
 
 isPalindrome('abba')
